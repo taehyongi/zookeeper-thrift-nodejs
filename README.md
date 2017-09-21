@@ -13,4 +13,4 @@
    * socket.io
    
 ## 시연 영상
-[![시연영상](https://i.ytimg.com/vi/IT-6MNJ4oNg/0.jpg?time=1506028688649)](http://www.youtube.com/watch?v=T-D1KVIuvjA)
+[![시연영상](https://i.ytimg.com/vi/IT-6MNJ4oNg/0.jpg?time=1506028688649)](http://www.youtube.com/watch?v=IT-6MNJ4oNg)
