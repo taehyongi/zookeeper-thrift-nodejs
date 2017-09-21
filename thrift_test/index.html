@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Thrift + Zookeeper + Socket.io Client Sample</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.js"></script>
+    <style>
+        body {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="zk">
+        <button class="ui primary button">Zookeeper State</button>
+        <div class="ui cards">
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        ZK Server 1
+                    </div>
+                    <div class="meta">
+                        Port 2181
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="zk_svr1_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        ZK Server 2
+                    </div>
+                    <div class="meta">
+                        Port 2182
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="zk_svr2_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        ZK Server 3
+                    </div>
+                    <div class="meta">
+                        Port 2183
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="zk_svr3_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        ZK Server 4
+                    </div>
+                    <div class="meta">
+                        Port 2184
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="zk_svr4_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        ZK Server 5
+                    </div>
+                    <div class="meta">
+                        Port 2185
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="zk_svr5_msg">OFF</div>
+                </div>
+            </div>
+        </div>
+        <div><br/></div>
+    </div>
+    <div id="thrift">    
+        <button class="ui primary button">Thrift State</button>
+        <div class="ui cards">
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        Thrift Server 1
+                    </div>
+                    <div class="meta">
+                        Port 9081
+                    </div>
+                    <div class="description" id="thrift_svr1_calc">
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="thrift_svr1_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        Thrift Server 2
+                    </div>
+                    <div class="meta">
+                        Port 9082
+                    </div>
+                    <div class="description" id="thrift_svr2_calc">
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="thrift_svr2_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        Thrift Server 3
+                    </div>
+                    <div class="meta">
+                        Port 9083
+                    </div>
+                    <div class="description" id="thrift_svr3_calc">
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="thrift_svr3_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        Thrift Server 4
+                    </div>
+                    <div class="meta">
+                        Port 9084
+                    </div>
+                    <div class="description" id="thrift_svr4_calc">
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="thrift_svr4_msg">OFF</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <img class="right floated mini ui image">
+                    <div class="header">
+                        Thrift Server 5
+                    </div>
+                    <div class="meta">
+                        Port 9085
+                    </div>
+                    <div class="description" id="thrift_svr5_calc">
+                    </div>
+                </div>
+                <div class="extra content">
+                    <div class="ui basic green fluid button" id="thrift_svr5_msg">OFF</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        $(function () {
+            var socket = io();
+
+            // zk 살아 있는지 리더가 누구인지 체크
+            socket.on("zk_svr1_state", function (data) {
+                //alert(data);
+                $("#zk_svr1_msg").text(data);
+                if(data == "leader") $("#zk_svr1_msg").attr("class", "ui orange fluid button");
+                else if(data == "follower") $("#zk_svr1_msg").attr("class", "ui yellow fluid button");
+                else $("#zk_svr1_msg").attr("class", "ui fluid button");
+            });
+            socket.on("zk_svr2_state", function (data) {
+                //alert(data);
+                $("#zk_svr2_msg").text(data);
+                if(data == "leader") $("#zk_svr2_msg").attr("class", "ui orange fluid button");
+                else if(data == "follower") $("#zk_svr2_msg").attr("class", "ui yellow fluid button");
+                else $("#zk_svr2_msg").attr("class", "ui fluid button");
+            });
+            socket.on("zk_svr3_state", function (data) {
+                //alert(data);
+                $("#zk_svr3_msg").text(data);
+                if(data == "leader") $("#zk_svr3_msg").attr("class", "ui orange fluid button");
+                else if(data == "follower") $("#zk_svr3_msg").attr("class", "ui yellow fluid button");
+                else $("#zk_svr3_msg").attr("class", "ui fluid button");
+            });
+            socket.on("zk_svr4_state", function (data) {
+                //alert(data);
+                $("#zk_svr4_msg").text(data);
+                if(data == "leader") $("#zk_svr4_msg").attr("class", "ui orange fluid button");
+                else if(data == "follower") $("#zk_svr4_msg").attr("class", "ui yellow fluid button");
+                else $("#zk_svr4_msg").attr("class", "ui fluid button");
+            });
+            socket.on("zk_svr5_state", function (data) {
+                //alert(data);
+                $("#zk_svr5_msg").text(data);
+                if(data == "leader") $("#zk_svr5_msg").attr("class", "ui orange fluid button");
+                else if(data == "follower") $("#zk_svr5_msg").attr("class", "ui yellow fluid button");
+                else $("#zk_svr5_msg").attr("class", "ui fluid button");
+            });
+
+            // thrift 이벤트 체크
+            socket.on("thrift_svr1_state", function (data) {
+                //alert(data);
+                $("#thrift_svr1_msg").text(data);
+                if(data == "ON") $("#thrift_svr1_msg").attr("class", "ui green fluid button");
+                else $("#thrift_svr1_msg").attr("class", "ui fluid button");
+            });
+            socket.on("thrift_svr2_state", function (data) {
+                //alert(data);
+                $("#thrift_svr2_msg").text(data);
+                if(data == "ON") $("#thrift_svr2_msg").attr("class", "ui green fluid button");
+                else $("#thrift_svr2_msg").attr("class", "ui fluid button");
+            });
+            socket.on("thrift_svr3_state", function (data) {
+                //alert(data);
+                $("#thrift_svr3_msg").text(data);
+                if(data == "ON") $("#thrift_svr3_msg").attr("class", "ui green fluid button");
+                else $("#thrift_svr3_msg").attr("class", "ui fluid button");
+            });
+            socket.on("thrift_svr4_state", function (data) {
+                //alert(data);
+                $("#thrift_svr4_msg").text(data);
+                if(data == "ON") $("#thrift_svr4_msg").attr("class", "ui green fluid button");
+                else $("#thrift_svr4_msg").attr("class", "ui fluid button");
+            });
+            socket.on("thrift_svr5_state", function (data) {
+                //alert(data);
+                $("#thrift_svr5_msg").text(data);
+                if(data == "ON") $("#thrift_svr5_msg").attr("class", "ui green fluid button");
+                else $("#thrift_svr5_msg").attr("class", "ui fluid button");
+            });
+
+            // thrift 이벤트 체크
+            socket.on("thrift_svr1_calc", function (data) {
+                //alert(data);
+                $("#thrift_svr1_calc").text(data);
+            });
+            socket.on("thrift_svr2_calc", function (data) {
+                //alert(data);
+                $("#thrift_svr2_calc").text(data);
+            });
+            socket.on("thrift_svr3_calc", function (data) {
+                //alert(data);
+                $("#thrift_svr3_calc").text(data);
+            });
+            socket.on("thrift_svr4_calc", function (data) {
+                //alert(data);
+                $("#thrift_svr4_calc").text(data);
+            });
+            socket.on("thrift_svr5_calc", function (data) {
+                //alert(data);
+                $("#thrift_svr5_calc").text(data);
+            });
+        });
+
+
+        // $(function () {
+        //     // socket.io 서버에 접속한다
+        //     var socket = io();
+
+        //     // 서버로 자신의 정보를 전송한다.
+        //     socket.emit("login", {
+        //         // name: "ungmo2",
+        //         name: makeRandomName(),
+        //         userid: "ungmo2@gmail.com"
+        //     });
+
+        //     // 서버로부터의 메시지가 수신되면
+        //     socket.on("login", function (data) {
+        //         $("#chatLogs").append("<div><strong>" + data + "</strong> has joined</div>");
+        //     });
+
+        //     // 서버로부터의 메시지가 수신되면
+        //     socket.on("chat", function (data) {
+        //         $("#chatLogs").append("<div>" + data.msg + " : from <strong>" + data.from.name + "</strong></div>");
+        //     });
+
+        //     // Send 버튼이 클릭되면
+        //     $("form").submit(function (e) {
+        //         e.preventDefault();
+        //         var $msgForm = $("#msgForm");
+
+        //         // 서버로 메시지를 전송한다.
+        //         socket.emit("chat", { msg: $msgForm.val() });
+        //         $msgForm.val("");
+        //     });
+
+        //     function makeRandomName() {
+        //         var name = "";
+        //         var possible = "abcdefghijklmnopqrstuvwxyz";
+        //         for (var i = 0; i < 3; i++) {
+        //             name += possible.charAt(Math.floor(Math.random() * possible.length));
+        //         }
+        //         return name;
+        //     }
+        // });
+    </script>
+</body>
+
+</html>

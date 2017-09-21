@@ -1,0 +1,332 @@
+2017-09-05 18:37:55,099 [myid:] - INFO  [main:QuorumPeerConfig@134] - Reading configuration from: /Users/taehyongi/zookeeper/zk-server-2/bin/../conf/zoo.cfg
+2017-09-05 18:37:55,113 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,113 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,114 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,114 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,114 [myid:] - INFO  [main:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,114 [myid:] - INFO  [main:QuorumPeerConfig@396] - Defaulting to majority quorums
+2017-09-05 18:37:55,118 [myid:2] - INFO  [main:DatadirCleanupManager@78] - autopurge.snapRetainCount set to 3
+2017-09-05 18:37:55,118 [myid:2] - INFO  [main:DatadirCleanupManager@79] - autopurge.purgeInterval set to 0
+2017-09-05 18:37:55,118 [myid:2] - INFO  [main:DatadirCleanupManager@101] - Purge task is not scheduled.
+2017-09-05 18:37:55,131 [myid:2] - INFO  [main:QuorumPeerMain@127] - Starting quorum peer
+2017-09-05 18:37:55,149 [myid:2] - INFO  [main:NIOServerCnxnFactory@89] - binding to port 0.0.0.0/0.0.0.0:2182
+2017-09-05 18:37:55,169 [myid:2] - INFO  [main:QuorumPeer@1134] - minSessionTimeout set to 1000
+2017-09-05 18:37:55,169 [myid:2] - INFO  [main:QuorumPeer@1145] - maxSessionTimeout set to 1000
+2017-09-05 18:37:55,169 [myid:2] - INFO  [main:QuorumPeer@1419] - QuorumPeer communication is not secured!
+2017-09-05 18:37:55,169 [myid:2] - INFO  [main:QuorumPeer@1448] - quorum.cnxn.threads.size set to 20
+2017-09-05 18:37:55,175 [myid:2] - INFO  [main:FileSnap@83] - Reading snapshot /Users/taehyongi/zookeeper/data/zk2/version-2/snapshot.3f00000000
+2017-09-05 18:37:55,198 [myid:2] - INFO  [ListenerThread:QuorumCnxManager$Listener@739] - My election bind port: localhost/127.0.0.1:3882
+2017-09-05 18:37:55,209 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:QuorumPeer@865] - LOOKING
+2017-09-05 18:37:55,210 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:FastLeaderElection@818] - New election. My id =  2, proposed zxid=0x4100000008
+2017-09-05 18:37:55,217 [myid:2] - INFO  [WorkerSender[myid=2]:QuorumCnxManager@337] - Have smaller server identifier, so dropping the connection: (3, 2)
+2017-09-05 18:37:55,217 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 2 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x41 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,217 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 1 (n.sid), 0x41 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,217 [myid:2] - INFO  [localhost/127.0.0.1:3882:QuorumCnxManager$Listener@746] - Received connection request /127.0.0.1:53361
+2017-09-05 18:37:55,217 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 1 (n.sid), 0x42 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,218 [myid:2] - INFO  [WorkerSender[myid=2]:QuorumCnxManager@337] - Have smaller server identifier, so dropping the connection: (4, 2)
+2017-09-05 18:37:55,219 [myid:2] - INFO  [WorkerSender[myid=2]:QuorumCnxManager@337] - Have smaller server identifier, so dropping the connection: (5, 2)
+2017-09-05 18:37:55,219 [myid:2] - INFO  [localhost/127.0.0.1:3882:QuorumCnxManager$Listener@746] - Received connection request /127.0.0.1:53364
+2017-09-05 18:37:55,220 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 2 (n.sid), 0x41 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,220 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 3 (n.sid), 0x41 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,220 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 3 (n.sid), 0x42 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,220 [myid:2] - INFO  [localhost/127.0.0.1:3882:QuorumCnxManager$Listener@746] - Received connection request /127.0.0.1:53366
+2017-09-05 18:37:55,220 [myid:2] - INFO  [WorkerSender[myid=2]:QuorumCnxManager@337] - Have smaller server identifier, so dropping the connection: (4, 2)
+2017-09-05 18:37:55,221 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 1 (n.sid), 0x42 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,221 [myid:2] - INFO  [WorkerSender[myid=2]:QuorumCnxManager@337] - Have smaller server identifier, so dropping the connection: (5, 2)
+2017-09-05 18:37:55,222 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 3 (n.sid), 0x42 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,222 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 4 (n.sid), 0x41 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,223 [myid:2] - INFO  [localhost/127.0.0.1:3882:QuorumCnxManager$Listener@746] - Received connection request /127.0.0.1:53368
+2017-09-05 18:37:55,223 [myid:2] - WARN  [RecvWorker:5:QuorumCnxManager$RecvWorker@1028] - Connection broken for id 5, my id = 2, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1013)
+2017-09-05 18:37:55,223 [myid:2] - WARN  [RecvWorker:4:QuorumCnxManager$RecvWorker@1028] - Connection broken for id 4, my id = 2, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1013)
+2017-09-05 18:37:55,226 [myid:2] - WARN  [RecvWorker:5:QuorumCnxManager$RecvWorker@1031] - Interrupting SendWorker
+2017-09-05 18:37:55,225 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LEADING (n.state), 4 (n.sid), 0x42 (n.peerEpoch) LOOKING (my state)
+2017-09-05 18:37:55,226 [myid:2] - WARN  [SendWorker:5:QuorumCnxManager$SendWorker@944] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1097)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:932)
+2017-09-05 18:37:55,227 [myid:2] - WARN  [SendWorker:5:QuorumCnxManager$SendWorker@954] - Send worker leaving thread
+2017-09-05 18:37:55,225 [myid:2] - INFO  [localhost/127.0.0.1:3882:QuorumCnxManager$Listener@746] - Received connection request /127.0.0.1:53369
+2017-09-05 18:37:55,225 [myid:2] - WARN  [SendWorker:4:QuorumCnxManager$SendWorker@944] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1097)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:932)
+2017-09-05 18:37:55,228 [myid:2] - WARN  [SendWorker:4:QuorumCnxManager$SendWorker@954] - Send worker leaving thread
+2017-09-05 18:37:55,227 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:QuorumPeer@935] - FOLLOWING
+2017-09-05 18:37:55,226 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LEADING (n.state), 4 (n.sid), 0x42 (n.peerEpoch) FOLLOWING (my state)
+2017-09-05 18:37:55,226 [myid:2] - WARN  [RecvWorker:4:QuorumCnxManager$RecvWorker@1031] - Interrupting SendWorker
+2017-09-05 18:37:55,230 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), LOOKING (n.state), 5 (n.sid), 0x41 (n.peerEpoch) FOLLOWING (my state)
+2017-09-05 18:37:55,230 [myid:2] - INFO  [WorkerReceiver[myid=2]:FastLeaderElection@600] - Notification: 1 (message format version), 4 (n.leader), 0x4100000008 (n.zxid), 0x1 (n.round), FOLLOWING (n.state), 5 (n.sid), 0x42 (n.peerEpoch) FOLLOWING (my state)
+2017-09-05 18:37:55,233 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Learner@86] - TCP NoDelay set to: true
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:zookeeper.version=3.4.10-39d3a4f269333c922ed3db283be479f9deacaa0f, built on 03/23/2017 10:13 GMT
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:host.name=68.245.171.115
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.version=1.8.0_101
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.vendor=Oracle Corporation
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.home=/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.class.path=/Users/taehyongi/zookeeper/zk-server-2/bin/../build/classes:/Users/taehyongi/zookeeper/zk-server-2/bin/../build/lib/*.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../lib/slf4j-api-1.6.1.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../lib/netty-3.10.5.Final.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../lib/log4j-1.2.16.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../lib/jline-0.9.94.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../zookeeper-3.4.10.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../src/java/lib/*.jar:/Users/taehyongi/zookeeper/zk-server-2/bin/../conf:
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.library.path=/Users/taehyongi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.io.tmpdir=/var/folders/vf/c5xlm9d565728p8z_g_0pkx80000gn/T/
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:java.compiler=<NA>
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:os.name=Mac OS X
+2017-09-05 18:37:55,239 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:os.arch=x86_64
+2017-09-05 18:37:55,240 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:os.version=10.12.6
+2017-09-05 18:37:55,240 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:user.name=taehyongi
+2017-09-05 18:37:55,240 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:user.home=/Users/taehyongi
+2017-09-05 18:37:55,240 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Environment@100] - Server environment:user.dir=/Users/taehyongi/zookeeper/zk-server-3/bin
+2017-09-05 18:37:55,241 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:ZooKeeperServer@173] - Created server with tickTime 1000 minSessionTimeout 1000 maxSessionTimeout 1000 datadir /Users/taehyongi/zookeeper/log/zk2/version-2 snapdir /Users/taehyongi/zookeeper/data/zk2/version-2
+2017-09-05 18:37:55,242 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Follower@64] - FOLLOWING - LEADER ELECTION TOOK - 32
+2017-09-05 18:37:55,245 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:QuorumPeer$QuorumServer@167] - Resolved hostname: localhost to address: localhost/127.0.0.1
+2017-09-05 18:37:55,250 [myid:2] - INFO  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Learner@332] - Getting a diff from the leader 0x4200000001
+2017-09-05 18:37:55,253 [myid:2] - WARN  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Learner@387] - Got zxid 0x4200000001 expected 0x1
+2017-09-05 18:37:55,265 [myid:2] - INFO  [SyncThread:2:FileTxnLog@203] - Creating new log file: log.4200000001
+2017-09-05 18:37:56,286 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53372
+2017-09-05 18:37:56,353 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ServerCnxn@318] - The list of known four letter word commands is : [{1936881266=srvr, 1937006964=stat, 2003003491=wchc, 1685417328=dump, 1668445044=crst, 1936880500=srst, 1701738089=envi, 1668247142=conf, 2003003507=wchs, 2003003504=wchp, 1668247155=cons, 1835955314=mntr, 1769173615=isro, 1920298859=ruok, 1735683435=gtmk, 1937010027=stmk}]
+2017-09-05 18:37:56,353 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:ServerCnxn@319] - The list of enabled four letter word commands is : [[wchs, stat, stmk, conf, ruok, mntr, srvr, envi, srst, isro, dump, gtmk, crst, cons]]
+2017-09-05 18:37:56,353 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53372
+2017-09-05 18:37:56,356 [myid:2] - INFO  [Thread-1:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:37:56,358 [myid:2] - INFO  [Thread-1:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53372 (no session established for client)
+2017-09-05 18:37:57,788 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53379
+2017-09-05 18:37:57,789 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53379
+2017-09-05 18:37:57,791 [myid:2] - INFO  [Thread-2:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:37:57,792 [myid:2] - INFO  [Thread-2:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53379 (no session established for client)
+2017-09-05 18:37:59,292 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53383
+2017-09-05 18:37:59,293 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53383
+2017-09-05 18:37:59,295 [myid:2] - INFO  [Thread-3:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:37:59,296 [myid:2] - INFO  [Thread-3:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53383 (no session established for client)
+2017-09-05 18:38:00,797 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53387
+2017-09-05 18:38:00,798 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53387
+2017-09-05 18:38:00,799 [myid:2] - INFO  [Thread-4:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:00,799 [myid:2] - INFO  [Thread-4:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53387 (no session established for client)
+2017-09-05 18:38:02,298 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53391
+2017-09-05 18:38:02,299 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53391
+2017-09-05 18:38:02,301 [myid:2] - INFO  [Thread-5:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:02,304 [myid:2] - INFO  [Thread-5:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53391 (no session established for client)
+2017-09-05 18:38:03,804 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53397
+2017-09-05 18:38:03,805 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53397
+2017-09-05 18:38:03,806 [myid:2] - INFO  [Thread-6:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:03,806 [myid:2] - INFO  [Thread-6:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53397 (no session established for client)
+2017-09-05 18:38:05,309 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53402
+2017-09-05 18:38:05,309 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53402
+2017-09-05 18:38:05,310 [myid:2] - INFO  [Thread-7:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:05,311 [myid:2] - INFO  [Thread-7:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53402 (no session established for client)
+2017-09-05 18:38:06,815 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53406
+2017-09-05 18:38:06,815 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53406
+2017-09-05 18:38:06,819 [myid:2] - INFO  [Thread-8:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:06,820 [myid:2] - INFO  [Thread-8:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53406 (no session established for client)
+2017-09-05 18:38:08,322 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53412
+2017-09-05 18:38:08,322 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53412
+2017-09-05 18:38:08,323 [myid:2] - INFO  [Thread-9:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:08,324 [myid:2] - INFO  [Thread-9:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53412 (no session established for client)
+2017-09-05 18:38:09,824 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53417
+2017-09-05 18:38:09,825 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53417
+2017-09-05 18:38:09,825 [myid:2] - INFO  [Thread-10:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:09,827 [myid:2] - INFO  [Thread-10:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53417 (no session established for client)
+2017-09-05 18:38:10,250 [myid:2] - WARN  [QuorumPeer[myid=2]/0:0:0:0:0:0:0:0:2182:Follower@118] - Got zxid 0x4200000002 expected 0x1
+2017-09-05 18:38:11,332 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53422
+2017-09-05 18:38:11,333 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53422
+2017-09-05 18:38:11,333 [myid:2] - INFO  [Thread-11:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:11,336 [myid:2] - INFO  [Thread-11:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53422 (no session established for client)
+2017-09-05 18:38:12,836 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53427
+2017-09-05 18:38:12,837 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53427
+2017-09-05 18:38:12,838 [myid:2] - INFO  [Thread-12:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:12,840 [myid:2] - INFO  [Thread-12:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53427 (no session established for client)
+2017-09-05 18:38:14,337 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53432
+2017-09-05 18:38:14,338 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53432
+2017-09-05 18:38:14,339 [myid:2] - INFO  [Thread-13:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:14,341 [myid:2] - INFO  [Thread-13:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53432 (no session established for client)
+2017-09-05 18:38:15,840 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53437
+2017-09-05 18:38:15,840 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53437
+2017-09-05 18:38:15,841 [myid:2] - INFO  [Thread-14:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:15,843 [myid:2] - INFO  [Thread-14:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53437 (no session established for client)
+2017-09-05 18:38:17,346 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53443
+2017-09-05 18:38:17,347 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53443
+2017-09-05 18:38:17,347 [myid:2] - INFO  [Thread-15:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:17,348 [myid:2] - INFO  [Thread-15:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53443 (no session established for client)
+2017-09-05 18:38:18,854 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53450
+2017-09-05 18:38:18,855 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53450
+2017-09-05 18:38:18,858 [myid:2] - INFO  [Thread-16:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:18,859 [myid:2] - INFO  [Thread-16:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53450 (no session established for client)
+2017-09-05 18:38:20,351 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53453
+2017-09-05 18:38:20,352 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53453
+2017-09-05 18:38:20,353 [myid:2] - INFO  [Thread-17:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:20,354 [myid:2] - INFO  [Thread-17:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53453 (no session established for client)
+2017-09-05 18:38:21,859 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53457
+2017-09-05 18:38:21,859 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53457
+2017-09-05 18:38:21,860 [myid:2] - INFO  [Thread-18:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:21,860 [myid:2] - INFO  [Thread-18:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53457 (no session established for client)
+2017-09-05 18:38:23,363 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53462
+2017-09-05 18:38:23,363 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53462
+2017-09-05 18:38:23,364 [myid:2] - INFO  [Thread-19:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:23,365 [myid:2] - INFO  [Thread-19:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53462 (no session established for client)
+2017-09-05 18:38:24,868 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53467
+2017-09-05 18:38:24,869 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53467
+2017-09-05 18:38:24,869 [myid:2] - INFO  [Thread-20:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:24,870 [myid:2] - INFO  [Thread-20:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53467 (no session established for client)
+2017-09-05 18:38:26,370 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53473
+2017-09-05 18:38:26,371 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53473
+2017-09-05 18:38:26,371 [myid:2] - INFO  [Thread-21:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:26,372 [myid:2] - INFO  [Thread-21:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53473 (no session established for client)
+2017-09-05 18:38:27,875 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53480
+2017-09-05 18:38:27,876 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53480
+2017-09-05 18:38:27,883 [myid:2] - INFO  [Thread-22:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:27,884 [myid:2] - INFO  [Thread-22:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53480 (no session established for client)
+2017-09-05 18:38:29,380 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53484
+2017-09-05 18:38:29,380 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53484
+2017-09-05 18:38:29,381 [myid:2] - INFO  [Thread-23:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:29,381 [myid:2] - INFO  [Thread-23:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53484 (no session established for client)
+2017-09-05 18:38:30,883 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53488
+2017-09-05 18:38:30,884 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53488
+2017-09-05 18:38:30,884 [myid:2] - INFO  [Thread-24:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:30,885 [myid:2] - INFO  [Thread-24:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53488 (no session established for client)
+2017-09-05 18:38:32,387 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53493
+2017-09-05 18:38:32,387 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53493
+2017-09-05 18:38:32,387 [myid:2] - INFO  [Thread-25:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:32,388 [myid:2] - INFO  [Thread-25:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53493 (no session established for client)
+2017-09-05 18:38:33,888 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53497
+2017-09-05 18:38:33,889 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53497
+2017-09-05 18:38:33,890 [myid:2] - INFO  [Thread-26:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:33,890 [myid:2] - INFO  [Thread-26:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53497 (no session established for client)
+2017-09-05 18:38:35,394 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53503
+2017-09-05 18:38:35,395 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53503
+2017-09-05 18:38:35,395 [myid:2] - INFO  [Thread-27:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:35,396 [myid:2] - INFO  [Thread-27:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53503 (no session established for client)
+2017-09-05 18:38:36,895 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53507
+2017-09-05 18:38:36,896 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53507
+2017-09-05 18:38:36,897 [myid:2] - INFO  [Thread-28:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:36,898 [myid:2] - INFO  [Thread-28:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53507 (no session established for client)
+2017-09-05 18:38:38,400 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53513
+2017-09-05 18:38:38,401 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53513
+2017-09-05 18:38:38,402 [myid:2] - INFO  [Thread-29:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:38,403 [myid:2] - INFO  [Thread-29:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53513 (no session established for client)
+2017-09-05 18:38:39,913 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53522
+2017-09-05 18:38:39,913 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53522
+2017-09-05 18:38:39,915 [myid:2] - INFO  [Thread-30:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:39,916 [myid:2] - INFO  [Thread-30:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53522 (no session established for client)
+2017-09-05 18:38:41,423 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53528
+2017-09-05 18:38:41,425 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53528
+2017-09-05 18:38:41,426 [myid:2] - INFO  [Thread-31:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:41,427 [myid:2] - INFO  [Thread-31:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53528 (no session established for client)
+2017-09-05 18:38:42,923 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53532
+2017-09-05 18:38:42,924 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53532
+2017-09-05 18:38:42,927 [myid:2] - INFO  [Thread-32:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:42,927 [myid:2] - INFO  [Thread-32:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53532 (no session established for client)
+2017-09-05 18:38:44,435 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53538
+2017-09-05 18:38:44,436 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53538
+2017-09-05 18:38:44,437 [myid:2] - INFO  [Thread-33:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:44,437 [myid:2] - INFO  [Thread-33:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53538 (no session established for client)
+2017-09-05 18:38:45,938 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53544
+2017-09-05 18:38:45,939 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53544
+2017-09-05 18:38:45,941 [myid:2] - INFO  [Thread-34:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:45,941 [myid:2] - INFO  [Thread-34:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53544 (no session established for client)
+2017-09-05 18:38:47,456 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53550
+2017-09-05 18:38:47,457 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53550
+2017-09-05 18:38:47,459 [myid:2] - INFO  [Thread-35:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:47,460 [myid:2] - INFO  [Thread-35:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53550 (no session established for client)
+2017-09-05 18:38:48,942 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53557
+2017-09-05 18:38:48,943 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53557
+2017-09-05 18:38:48,943 [myid:2] - INFO  [Thread-36:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:48,944 [myid:2] - INFO  [Thread-36:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53557 (no session established for client)
+2017-09-05 18:38:50,444 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53562
+2017-09-05 18:38:50,444 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53562
+2017-09-05 18:38:50,445 [myid:2] - INFO  [Thread-37:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:50,445 [myid:2] - INFO  [Thread-37:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53562 (no session established for client)
+2017-09-05 18:38:51,952 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53568
+2017-09-05 18:38:51,953 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53568
+2017-09-05 18:38:51,953 [myid:2] - INFO  [Thread-38:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:51,954 [myid:2] - INFO  [Thread-38:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53568 (no session established for client)
+2017-09-05 18:38:53,456 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53575
+2017-09-05 18:38:53,456 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53575
+2017-09-05 18:38:53,457 [myid:2] - INFO  [Thread-39:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:53,457 [myid:2] - INFO  [Thread-39:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53575 (no session established for client)
+2017-09-05 18:38:54,959 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53581
+2017-09-05 18:38:54,959 [myid:2] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2182:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53581
+2017-09-05 18:38:54,960 [myid:2] - INFO  [Thread-40:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:54,960 [myid:2] - INFO  [Thread-40:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53581 (no session established for client)
+ - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53539
+2017-09-05 18:38:44,436 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53539
+2017-09-05 18:38:44,436 [myid:1] - INFO  [Thread-39:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:44,437 [myid:1] - INFO  [Thread-39:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53539 (no session established for client)
+2017-09-05 18:38:45,937 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53543
+2017-09-05 18:38:45,938 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53543
+2017-09-05 18:38:45,939 [myid:1] - INFO  [Thread-40:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:45,940 [myid:1] - INFO  [Thread-40:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53543 (no session established for client)
+2017-09-05 18:38:47,453 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53549
+2017-09-05 18:38:47,455 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53549
+2017-09-05 18:38:47,456 [myid:1] - INFO  [Thread-41:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:47,457 [myid:1] - INFO  [Thread-41:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53549 (no session established for client)
+2017-09-05 18:38:48,943 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53558
+2017-09-05 18:38:48,943 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53558
+2017-09-05 18:38:48,944 [myid:1] - INFO  [Thread-42:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:48,945 [myid:1] - INFO  [Thread-42:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53558 (no session established for client)
+2017-09-05 18:38:48,995 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@1044] - Closed socket connection for client /0:0:0:0:0:0:0:1:53421 which had sessionid 0x15e516720980001
+2017-09-05 18:38:50,443 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53561
+2017-09-05 18:38:50,444 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53561
+2017-09-05 18:38:50,444 [myid:1] - INFO  [Thread-43:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:50,445 [myid:1] - INFO  [Thread-43:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53561 (no session established for client)
+2017-09-05 18:38:51,952 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53569
+2017-09-05 18:38:51,953 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53569
+2017-09-05 18:38:51,955 [myid:1] - INFO  [Thread-44:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:51,955 [myid:1] - INFO  [Thread-44:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53569 (no session established for client)
+2017-09-05 18:38:53,455 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53574
+2017-09-05 18:38:53,456 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53574
+2017-09-05 18:38:53,456 [myid:1] - INFO  [Thread-45:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:53,457 [myid:1] - INFO  [Thread-45:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53574 (no session established for client)
+2017-09-05 18:38:54,959 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53580
+2017-09-05 18:38:54,959 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53580
+2017-09-05 18:38:54,960 [myid:1] - INFO  [Thread-46:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:54,961 [myid:1] - INFO  [Thread-46:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53580 (no session established for client)
+2017-09-05 18:38:55,467 [myid:1] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1028] - Connection broken for id 2, my id = 1, error = 
+java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$RecvWorker.run(QuorumCnxManager.java:1013)
+2017-09-05 18:38:55,467 [myid:1] - WARN  [RecvWorker:2:QuorumCnxManager$RecvWorker@1031] - Interrupting SendWorker
+2017-09-05 18:38:55,468 [myid:1] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@944] - Interrupted while waiting for message on queue
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.reportInterruptAfterWait(AbstractQueuedSynchronizer.java:2014)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2088)
+	at java.util.concurrent.ArrayBlockingQueue.poll(ArrayBlockingQueue.java:418)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.pollSendQueue(QuorumCnxManager.java:1097)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager.access$700(QuorumCnxManager.java:74)
+	at org.apache.zookeeper.server.quorum.QuorumCnxManager$SendWorker.run(QuorumCnxManager.java:932)
+2017-09-05 18:38:55,469 [myid:1] - WARN  [SendWorker:2:QuorumCnxManager$SendWorker@954] - Send worker leaving thread
+2017-09-05 18:38:56,465 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53587
+2017-09-05 18:38:56,466 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53587
+2017-09-05 18:38:56,467 [myid:1] - INFO  [Thread-47:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:56,467 [myid:1] - INFO  [Thread-47:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53587 (no session established for client)
+2017-09-05 18:38:57,973 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53592
+2017-09-05 18:38:57,974 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53592
+2017-09-05 18:38:57,975 [myid:1] - INFO  [Thread-48:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:57,975 [myid:1] - INFO  [Thread-48:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53592 (no session established for client)
+2017-09-05 18:38:59,478 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53598
+2017-09-05 18:38:59,478 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53598
+2017-09-05 18:38:59,479 [myid:1] - INFO  [Thread-49:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:38:59,480 [myid:1] - INFO  [Thread-49:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53598 (no session established for client)
+2017-09-05 18:39:00,987 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53604
+2017-09-05 18:39:00,988 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53604
+2017-09-05 18:39:00,988 [myid:1] - INFO  [Thread-50:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:39:00,988 [myid:1] - INFO  [Thread-50:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53604 (no session established for client)
+2017-09-05 18:39:02,487 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53610
+2017-09-05 18:39:02,488 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53610
+2017-09-05 18:39:02,488 [myid:1] - INFO  [Thread-51:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:39:02,489 [myid:1] - INFO  [Thread-51:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53610 (no session established for client)
+2017-09-05 18:39:04,000 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53616
+2017-09-05 18:39:04,000 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53616
+2017-09-05 18:39:04,001 [myid:1] - INFO  [Thread-52:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:39:04,001 [myid:1] - INFO  [Thread-52:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53616 (no session established for client)
+2017-09-05 18:39:05,502 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxnFactory@192] - Accepted socket connection from /127.0.0.1:53622
+2017-09-05 18:39:05,503 [myid:1] - INFO  [NIOServerCxn.Factory:0.0.0.0/0.0.0.0:2181:NIOServerCnxn@883] - Processing stat command from /127.0.0.1:53622
+2017-09-05 18:39:05,503 [myid:1] - INFO  [Thread-53:NIOServerCnxn$StatCommand@674] - Stat command output
+2017-09-05 18:39:05,504 [myid:1] - INFO  [Thread-53:NIOServerCnxn@1044] - Closed socket connection for client /127.0.0.1:53622 (no session established for client)
